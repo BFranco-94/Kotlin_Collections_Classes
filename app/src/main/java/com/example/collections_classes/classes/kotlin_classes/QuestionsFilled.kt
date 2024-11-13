@@ -3,7 +3,7 @@ package com.example.collections_classes.classes.kotlin_classes
 
 
 /** Generic Class instead of 3 classes with the same structure accepting different types of data **/
-class Question<T>(
+data class Question<T>(
     val questionText: String,
     val answer: T,
     val difficulty: Difficulty
