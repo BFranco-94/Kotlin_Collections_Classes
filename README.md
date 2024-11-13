@@ -20,6 +20,11 @@ gitGraph
    commit id: "Data Class in Question Generic Class"
    checkout main
    merge 3-data-class tag: "#3 - Merge Data Class in Question"
+   branch 4-singleton-object
+   commit id: "SSingleton Object, DB connection status simulation implemented"
+   checkout main
+   merge 4-singleton-object tag: "#4 - SSingleton Object, DB connection status simulation implemented"
+  
 
 ```
 
