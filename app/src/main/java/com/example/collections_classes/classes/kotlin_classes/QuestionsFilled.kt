@@ -6,7 +6,7 @@ package com.example.collections_classes.classes.kotlin_classes
 class Question<T>(
     val questionText: String,
     val answer: T,
-    val difficulty: String
+    val difficulty: Difficulty
 )
 
 
