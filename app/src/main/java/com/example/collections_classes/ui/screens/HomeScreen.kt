@@ -23,5 +23,7 @@ fun HomeScreen(navController: NavController){
         Text(text = "Question: "+question.questionText, modifier = Modifier.align(Alignment.CenterHorizontally))
         Text(text = "Answer: "+question.answer, modifier = Modifier.align(Alignment.CenterHorizontally))
         Text(text = "Difficulty: "+question.difficulty, modifier = Modifier.align(Alignment.CenterHorizontally))
+        // data class it will implement the toString method automatically for us to print the values of the object
+        println(question.toString())
     }
 }
