@@ -8,12 +8,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
+import com.example.collections_classes.classes.kotlin_classes.Difficulty
 import com.example.collections_classes.classes.kotlin_classes.Question
 
 
 @Composable
 fun HomeScreen(navController: NavController){
-    val question = Question<String>("What is the capital of France?", "Paris", "Easy")
+    val question = Question("What is the capital of France?", "Paris", Difficulty.EASY)
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
