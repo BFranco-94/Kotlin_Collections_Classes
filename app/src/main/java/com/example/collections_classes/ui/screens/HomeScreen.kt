@@ -52,12 +52,28 @@ fun HomeScreen(navController: NavController){
             modifier = Modifier.align(Alignment.CenterHorizontally)
         )
 
+                // Progress bar connection to the database
+                connection.showProgressBarConnection()
+                Text(
+                    text = ""+DbConnection.dbProgress,
+                    modifier = Modifier.align(Alignment.CenterHorizontally)
+                )
+
+
         // Disconnection from the database
         connection.disconnect()
         Text(
             text = "Disconnecting -> Connection Status: ${DbConnection.isConnected.value}",
             modifier = Modifier.align(Alignment.CenterHorizontally)
         )
+
+                // Progress bar connection to disconnect the database
+                DbConnection.progressConnection = 0
+                connection.showProgressBarConnection()
+                Text(
+                    text = ""+DbConnection.dbProgress,
+                    modifier = Modifier.align(Alignment.CenterHorizontally)
+                )
 
         Image(
             painter = painterResource(id = R.drawable.connection),
