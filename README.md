@@ -28,6 +28,10 @@ gitGraph
    commit id: "7cb2e95 Extension Function with Interface"
    checkout main
    merge 5-extension-functions-with-interface tag: "#5 - Extension Function with Interface"
+   branch 6-scope-function
+   commit id: "abc0b52 Scope Function implemented to access to the db properties"
+   checkout main
+   merge 6-scope-function tag: "#6 - Scope Function implemented to access to the db properties"
   
 
 ```
@@ -43,6 +47,9 @@ gitGraph
 
 **Current Application developed** for training/learning purposes:
 
-<img src="https://github.com/user-attachments/assets/7beace12-38b4-424a-91b1-e620a47efb17" width="40%" height="700" alt="pull request screen view result">
+![image](https://github.com/user-attachments/assets/15b56b93-bb0e-4072-86e3-003590a1d513)
+[![Static Badge](https://img.shields.io/badge/Pull%20Request%20Current%20Progress-black?style=flat-square&logo=github)](https://github.com/BFranco-94/Kotlin_Collections_Classes/pull/12)
+![Static Badge](https://img.shields.io/badge/Application%20Progress-green?style=flat-square&logo=kotlin&label=Kotlin)
+![Static Badge](https://img.shields.io/badge/Application%20Progress-green?style=flat-square&logo=android&label=Android)
 
 
