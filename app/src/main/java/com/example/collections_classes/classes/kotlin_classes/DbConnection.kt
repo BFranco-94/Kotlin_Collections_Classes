@@ -5,6 +5,22 @@ import com.example.collections_classes.classes.kotlin_interfaces.ProgressBarConn
 
 class DbConnection : ProgressBarConnection {
 
+    /**
+     * Establishes a connection to the database and data connection
+     *
+     * @return The connection status after establishing the connection.
+     */
+    companion object Connection {
+        var driver: String = "mysql"
+        var host: String = "localhost"
+        var port = 3306
+        var username: String = "root"
+        var password: String = "password"
+        var database: String = "kotlin"
+        var progressConnection: Int = 8
+        var dbProgress: String = ""
+        var isConnected: DataBaseDataConnection = DataBaseDataConnection.DISCONNECTED
+    }
 
     /**
      * Gets the text that shows the progress of the database connection.
@@ -38,25 +54,6 @@ class DbConnection : ProgressBarConnection {
         return "▓".repeat(filled) + "░".repeat(total - filled)
     }
 
-
-    /**
-     * Establishes a connection to the database and data connection
-     *
-     * @return The connection status after establishing the connection.
-     */
-    companion object Connection {
-        var driver: String = "mysql"
-        var host: String = "localhost"
-        var port = 3306
-        var username: String = "root"
-        var password: String = "password"
-        var database: String = "kotlin"
-        var progressConnection: Int = 8
-        var dbProgress: String = ""
-        var isConnected: DataBaseDataConnection = DataBaseDataConnection.DISCONNECTED
-    }
-
-
     /**
      * Establishes a connection to the database.
      * This method simulates the process of connecting to the database.
@@ -80,6 +77,28 @@ class DbConnection : ProgressBarConnection {
         isConnected = DataBaseDataConnection.DISCONNECTED
         return isConnected
     }
+
+    /**
+     * Retrieves and prints the current database connection properties in a formatted string.
+     * This function accesses the `DbConnection` properties using the `let` scope function
+     * to build a string that includes the driver, host, port, and database details.
+     *
+     * The generated string is printed to the console and returned by the function.
+     *
+     * @return A formatted string containing the database connection properties,
+     *         including the driver, host, port, and database.
+     */
+    fun printDbProperties(): String {
+        val dbProperties : String = DbConnection.let {
+            "Driver: ${it.driver}, \n" +
+            "Host: ${it.host}, \n" +
+            "Port: ${it.port}, \n" +
+            "Database: ${it.database} \n"
+        }
+        println(dbProperties)
+        return dbProperties
+    }
+
 }
 
 
