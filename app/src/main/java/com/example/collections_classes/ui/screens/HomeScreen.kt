@@ -22,7 +22,7 @@ import com.example.collections_classes.classes.kotlin_classes.Question
 @Composable
 fun HomeScreen(navController: NavController){
     val question = Question("What is the capital of France?", "Paris", Difficulty.EASY)
-    val connection = DbConnection()
+    val connection = DbConnection().apply {}
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
@@ -44,6 +44,12 @@ fun HomeScreen(navController: NavController){
 
         // Connection status by default from database
         Text("Default -> Connection Status: ${DbConnection.isConnected.value}", modifier = Modifier.align(Alignment.CenterHorizontally))
+
+        //DB properties shown on console and in text component
+        Text(
+            text = "DB Properties: ${DbConnection().printDbProperties().apply { }}",
+            modifier = Modifier.align(Alignment.CenterHorizontally)
+        )
 
         // Connection to the database
         connection.connect()
@@ -84,3 +90,4 @@ fun HomeScreen(navController: NavController){
 
     }
 }
+
