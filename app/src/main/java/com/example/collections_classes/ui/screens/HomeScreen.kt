@@ -20,7 +20,7 @@ import com.example.collections_classes.classes.kotlin_classes.Question
 
 
 @Composable
-fun HomeScreen(navController: NavController){
+fun ClassesScreen(navController: NavController){
     val question = Question("What is the capital of France?", "Paris", Difficulty.EASY)
     val connection = DbConnection().apply {}
     Column(
