@@ -2,5 +2,6 @@ package com.example.collections_classes.ui.routes
 
 object Routes {
 
-    val HOME = "homeScreen"
+    const val CLASSES_SCREEN = "classesScreen"
+    const val ARRAYS_SCREEN = "arraysScreen"
 }
