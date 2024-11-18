@@ -8,12 +8,13 @@ import com.example.collections_classes.ui.routes.Routes
 import com.example.collections_classes.ui.screens.ArraysScreen
 import com.example.collections_classes.ui.screens.ClassesScreen
 import com.example.collections_classes.ui.screens.ListScreen
+import com.example.collections_classes.ui.screens.SetScreen
 
 
 @Composable
 fun Navigator(){
     val navController = rememberNavController()
-    NavHost(navController = navController, startDestination = "listScreen", builder = {
+    NavHost(navController = navController, startDestination = "setsScreen", builder = {
         composable(Routes.CLASSES_SCREEN) {
             ClassesScreen(navController)
         }
@@ -22,6 +23,9 @@ fun Navigator(){
         }
         composable(Routes.LIST_SCREEN) {
             ListScreen(navController)
+        }
+        composable(Routes.SETS_SCREEN) {
+            SetScreen(navController)
         }
     })
 }
