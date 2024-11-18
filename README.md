@@ -32,6 +32,14 @@ gitGraph
    commit id: "abc0b52 Scope Function implemented to access to the db properties"
    checkout main
    merge 6-scope-function tag: "#6 - Scope Function implemented to access to the db properties"
+   branch 7-arrays
+   commit id: "7476446 Array - Collection Builder"
+   checkout main
+   merge 7-arrays tag: "#7 - Array - Collection Builder"
+   branch 8-lists-with-kotlin
+   commit id: "9c360b5 List Collection"
+   checkout main
+   merge 8-lists-with-kotlin tag: "#8 - List Collection"
   
 
 ```
@@ -47,7 +55,7 @@ gitGraph
 
 **Current Application developed** for training/learning purposes:
 
-![image](https://github.com/user-attachments/assets/15b56b93-bb0e-4072-86e3-003590a1d513)
+![image](https://github.com/user-attachments/assets/adf66fc9-9947-4a3b-ba76-728f7e187661)
 [![Static Badge](https://img.shields.io/badge/Pull%20Request%20Current%20Progress-black?style=flat-square&logo=github)](https://github.com/BFranco-94/Kotlin_Collections_Classes/pull/12)
 ![Static Badge](https://img.shields.io/badge/Application%20Progress-green?style=flat-square&logo=kotlin&label=Kotlin)
 ![Static Badge](https://img.shields.io/badge/Application%20Progress-green?style=flat-square&logo=android&label=Android)
