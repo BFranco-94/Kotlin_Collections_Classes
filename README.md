@@ -40,6 +40,14 @@ gitGraph
    commit id: "9c360b5 List Collection"
    checkout main
    merge 8-lists-with-kotlin tag: "#8 - List Collection"
+   branch 9-set-collection
+   commit id: "a931302 Set Collection"
+   checkout main
+   merge 9-set-collection tag: "#9 - Set Collection"
+   branch 10-map-collection
+   commit id: "76440363 Map Collection"
+   checkout main
+   merge 10-map-collection tag: "#10 - Map Collection"
   
 
 ```
@@ -55,7 +63,7 @@ gitGraph
 
 **Current Application developed** for training/learning purposes:
 
-![image](https://github.com/user-attachments/assets/adf66fc9-9947-4a3b-ba76-728f7e187661)
+![image](https://github.com/user-attachments/assets/1d59a460-193b-40ef-9207-8dd186a0543e)
 [![Static Badge](https://img.shields.io/badge/Pull%20Request%20Current%20Progress-black?style=flat-square&logo=github)](https://github.com/BFranco-94/Kotlin_Collections_Classes/pull/12)
 ![Static Badge](https://img.shields.io/badge/Application%20Progress-green?style=flat-square&logo=kotlin&label=Kotlin)
 ![Static Badge](https://img.shields.io/badge/Application%20Progress-green?style=flat-square&logo=android&label=Android)
